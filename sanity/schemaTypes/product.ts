@@ -12,18 +12,35 @@ export default {
         {
             name: 'image',
             type: 'array',
-            title: 'Product Image:',
+            title: 'Images of Product:',
             of:[{type: 'image'}]
         },
         {
             name: 'description',
             type: 'text',
-            title: "Description"
+            title: "Description Product"
         },
         {
             name: 'slug',
             type: 'slug',
-            title: 'Slug'
+            title: 'Slug',
+            options: {
+                source: 'name'
+            }
+
+        },
+        {
+            name: 'price',
+            type: 'number',
+            title: 'Price of Product'
+        },
+        {
+            name: 'category',
+            type: 'reference',
+            title: 'Product Category',
+            to: [
+                {type: 'category'}
+            ]
         }
     ]
 }
