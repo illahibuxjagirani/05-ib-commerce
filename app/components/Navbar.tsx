@@ -16,7 +16,7 @@ function Navbar() {
   let pathName = usePathname();
   return (
     <header className="border-b h-[90px]">
-      <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl">
+      <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl h-full">
         <Link href={"/"}>
           <h1 className="font-bold">
             <span className="italic text-2xl md:text-4xl text-slate-900">IB</span>
